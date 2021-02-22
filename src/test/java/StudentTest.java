@@ -36,4 +36,14 @@ public class StudentTest {
         assertEquals(100, (int) fer.getGrades().get(1));
     }
 
+    @Test
+    public void testIfGetGradeAverageWorks(){
+        Student fer = new Student(1L, "Fer");
+        fer.addGrade(80);
+        fer.addGrade(100);
+        assertEquals(90, fer.getGradeAverage(), 0);
+        fer.addGrade(60);
+        assertEquals(80, fer.getGradeAverage(), 0);
+    }
+
 }
