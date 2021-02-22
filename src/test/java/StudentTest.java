@@ -23,4 +23,13 @@ public class StudentTest {
 
     }
 
+    @Test
+    public void testIfAddGradeWorks(){
+        Student fer = new Student(1L, "Fer");
+        fer.addGrade(90);
+        fer.addGrade(100);
+        assertEquals(90, (int) fer.getGrades().get(0));
+        assertEquals(100, (int) fer.getGrades().get(1));
+    }
+
 }

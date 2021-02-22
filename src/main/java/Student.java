@@ -22,4 +22,8 @@ public class Student {
     public long getId() {
         return id;
     }
+
+    public void addGrade(int grade) {
+        this.grades.add(grade);
+    }
 }
